@@ -7,7 +7,6 @@ public class IOAssemblyNode : AssemblyNodeBase
         Compression = new("Compression", this);
         FileSystem = new("FileSystem", this);
         Pipes = new("Pipes", this);
-
         IsolatedStorage = new("IsolatedStorage", this);
         MemoryMappedFiles = new("MemoryMappedFiles", this);
         UnmanagedMemoryStream = new("UnmanagedMemoryStream", this);
@@ -16,7 +15,6 @@ public class IOAssemblyNode : AssemblyNodeBase
     public IOCompressionAssemblyNode Compression { get; init; }
     public IOPipesAssemblyNode Pipes { get; init; }
     public IOFileSystemAssemblyNode FileSystem { get; init; }
-
     public LastAssemblyNode IsolatedStorage { get; init; }
     public LastAssemblyNode MemoryMappedFiles { get; init; }
     public LastAssemblyNode UnmanagedMemoryStream { get; init; }

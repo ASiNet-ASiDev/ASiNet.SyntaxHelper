@@ -4,7 +4,6 @@ public class ThreadingAssemblyNode : AssemblyNodeBase
     public ThreadingAssemblyNode(string assemblyName, IAssemblyNode? parent = null) : base(assemblyName, parent)
     {
         Tasks = new("Tasks", this);
-
         Channels = new("Channels", this);
         Overlapped = new("Overlapped", this);
         Thread = new("Thread", this);
@@ -13,15 +12,12 @@ public class ThreadingAssemblyNode : AssemblyNodeBase
     }
 
     public TasksAssemblyNode Tasks { get; init; }
-
     public LastAssemblyNode Channels { get; init; }
     public LastAssemblyNode Overlapped { get; init; }
     public LastAssemblyNode Thread { get; init; }
     public LastAssemblyNode ThreadPool { get; init; }
     public LastAssemblyNode Timer { get; init; }
 }
-
-
 
 public class TasksAssemblyNode : AssemblyNodeBase
 {

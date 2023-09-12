@@ -6,17 +6,14 @@ public class SystemAssemblyNode : AssemblyNodeBase
         Runtime = new("Runtime", this);
         Threading = new("Threading", this);
         Private = new("Private", this);
-
         Core = new("Core", this);
         Console = new("Console", this);
         AppContex = new("AppContex", this);
         Buffers = new("Buffers", this);
         Memory = new("Memory", this);
         Linq = new("Linq", this);
-
         Collections = new("Collections", this);
         IO = new("IO", this);
-
         ValueTuple = new("ValueTuple", this);
         Transactions = new("Transactions", this);
         Windows = new("Windows", this);
@@ -30,64 +27,43 @@ public class SystemAssemblyNode : AssemblyNodeBase
         Reflection = new("Reflection", this);
         Globalization = new("Globalization", this);
         Security = new("Security", this);
-
         ServiceModel = new("ServiceModel", this);
         Data = new("Data", this);
         Diagnostics = new("Diagnostics", this);
-
         ComponentModel = new("ComponentModel", this);
-
         Xml = new("Xml", this);
+        Configuration = new("Configuration", this);
     }
 
     public GlobalizationAssemblyNode Globalization { get; init; }
     public ReflectionAssemblyNode Reflection { get; init; }
-
     public RuntimeAssemblyNode Runtime { get; init; }
-
     public PrivateAssemblyNode Private { get; init; }
-
     public ThreadingAssemblyNode Threading { get; init; }
-
     public TransactionsAssemblyNode Transactions { get; init; }
-
     public CollectionsAssemblyNode Collections { get; init; }
     public LinqAssemblyNode Linq { get; init; }
     public ResourcesAssemblyNode Resources { get; init; }
-
     public NumericsAssemblyNode Numerics { get; init; }
-
     public IOAssemblyNode IO { get; init; }
-
     public WebAssemblyNode Web { get; init; }
     public NetAssemblyNode Net { get; init; }
-
     public SecurityAssemblyNode Security { get; init; }
-
     public ServiceModelAssemblyNode ServiceModel { get; init; }
-
     public DataAssemblyNode Data { get; init; }
     public DiagnosticsAssemblyNode Diagnostics { get; init; }
-
     public ComponentModelAssemblyNode ComponentModel { get; init; }
-
     public TextAssemblyNode Text { get; init; }
-
     public LastAssemblyNode Core { get; init; }
-
     public LastAssemblyNode Console { get; init; }
-
     public LastAssemblyNode AppContex { get; init; }
-
     public LastAssemblyNode Buffers { get; init; }
     public LastAssemblyNode Windows { get; init; }
     public LastAssemblyNode Memory { get; init; }
     public LastAssemblyNode ValueTuple { get; init; }
     public LastAssemblyNode ServiceProcess { get; init; }
     public LastAssemblyNode ObjectModel { get; init; }
-
     public LastAssemblyNode Configuration { get; init; }
-
     public SystemXmlAssemblyNode Xml { get; init; }
 }
 
@@ -104,7 +80,6 @@ public class ResourcesAssemblyNode : AssemblyNodeBase
     public LastAssemblyNode Reader { get; init; }
     public LastAssemblyNode ResourceManager { get; init; }
     public LastAssemblyNode Writer { get; init; }
-
 }
 
 public class NumericsAssemblyNode : AssemblyNodeBase
@@ -123,7 +98,6 @@ public class NetAssemblyNode : AssemblyNodeBase
     {
         WebSockets = new("WebSockets", this);
         Http = new("Http", this);
-
         HttpListener = new("HttpListener", this);
         Mail = new("Mail", this);
         NameResolution = new("NameResolution", this);
@@ -142,7 +116,6 @@ public class NetAssemblyNode : AssemblyNodeBase
 
     public NetHttpAssemblyNode Http { get; init; }
     public WebSocketsAssemblyNode WebSockets { get; init; }
-
     public LastAssemblyNode HttpListener { get; init; }
     public LastAssemblyNode Mail { get; init; }
     public LastAssemblyNode NameResolution { get; init; }
@@ -222,7 +195,6 @@ public class ReflectionAssemblyNode : AssemblyNodeBase
     }
 
     public ReflectionEmitAssemblyNode Emit { get; init; }
-
     public LastAssemblyNode TypeExtensions { get; init; }
     public LastAssemblyNode DispatchProxy { get; init; }
     public LastAssemblyNode Extensions { get; init; }
@@ -268,7 +240,6 @@ public class SecurityAssemblyNode : AssemblyNodeBase
 
     public CryptographyAssemblyNode Cryptography { get; init; }
     public PrincipalAssemblyNode Principal { get; init; }
-
     public LastAssemblyNode SecureString { get; init; }
     public LastAssemblyNode Claims { get; init; }
     public LastAssemblyNode AccessControl { get; init; }
@@ -388,7 +359,6 @@ public class SystemXmlAssemblyNode : AssemblyNodeBase
     }
 
     public XmlXPathAssemblyNode XPath { get; init; }
-
     public LastAssemblyNode XmlSerializer { get; init; }
     public LastAssemblyNode XmlDocument { get; init; }
     public LastAssemblyNode XDocument { get; init; }

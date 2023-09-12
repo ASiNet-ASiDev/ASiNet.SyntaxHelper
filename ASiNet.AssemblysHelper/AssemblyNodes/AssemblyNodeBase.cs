@@ -9,11 +9,11 @@ public abstract class AssemblyNodeBase : IAssemblyNode
         AssemblyPath = AssemblysHelper.GetDefaultAssembluPath(FullAssemblyName);
     }
 
-    protected IAssemblyNode? _parent;
-
     public string AssemblyName { get; }
     public string FullAssemblyName { get; }
     public string AssemblyPath { get; }
+
+    protected IAssemblyNode? _parent;
 
     protected static string GetFullAssemblyName(string assemblyName, IAssemblyNode? parent = null) => 
         parent is null ? assemblyName : $"{parent.FullAssemblyName}{AssemblyTrees.SeparatorChar}{assemblyName}";

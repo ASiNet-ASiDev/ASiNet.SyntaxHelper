@@ -10,11 +10,8 @@ public class PrivateAssemblyNode : AssemblyNodeBase
     }
 
     public LastAssemblyNode CoreLib { get; init; }
-
     public LastAssemblyNode DataContractSerialization { get; init; }
-
     public LastAssemblyNode Uri { get; init; }
-
     public PrivateXmlAssemblyNode Xml { get; init; }
 }
 

@@ -5,7 +5,6 @@ public class RuntimeAssemblyNode : AssemblyNodeBase
     {
         CompilerServices = new("CompilerServices", this);
         InteropServices = new("InteropServices", this);
-
         Extensions = new("Extensions", this);
         Handles = new("Handles", this);
         Intrinsics = new("Intrinsics", this);
@@ -17,7 +16,6 @@ public class RuntimeAssemblyNode : AssemblyNodeBase
     public CompilerServicesAssemblyNode CompilerServices { get; init; }
     public InteropServicesAssemblyNode InteropServices { get; init; }
     public SerializationAssemblyNode Serialization { get; init; }
-
     public LastAssemblyNode Extensions { get; init; }
     public LastAssemblyNode Handles { get; init; }
     public LastAssemblyNode Intrinsics { get; init; }
